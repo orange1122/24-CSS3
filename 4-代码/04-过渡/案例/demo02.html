@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			background-color: #eee;
+		}
+		.items{
+			margin:100px auto;
+			width: 800px;
+			height: 300px;
+		}
+		.item{
+			width: 230px;
+			height: 300px;
+			background-color: #fff;
+			text-align: center;
+			float: left;
+			margin-right:20px;
+			transition: all 0.5s;
+			position: relative;
+			top: 0px;
+			overflow: hidden;
+
+		}
+		.pic{
+			margin-top: 30px;
+
+		}
+		.desc{
+			width: 100%;
+			height: 100px;
+			background-color: pink;
+			position: absolute;
+			bottom:-100px;
+			transition: all 0.5s;
+		}
+		.item:hover{
+			box-shadow: 0 0 15px #aaa;
+			top: -5px;
+		}
+		.item:hover .desc{
+			bottom: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="items">
+		<div class="item"><img src="./images/1.jpg" alt=""></div>
+		<div class="item">
+			<div class="pic"><img src="./images/2.jpg" alt=""></div>
+			<div class="desc"></div>
+		</div>
+		<div class="item">
+			<div class="pic"><img src="./images/3.jpg" alt=""></div>
+			<div class="desc"></div>
+		</div>
+	</div>
+</body>
+</html>
